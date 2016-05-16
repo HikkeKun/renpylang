@@ -13,6 +13,7 @@
 .idea/dataSources.ids
 .idea/dataSources.xml
 .idea/dataSources.local.xml
+/.gitignore
 .idea/sqlDataSources.xml
 .idea/dynamic.xml
 .idea/uiDesigner.xml

@@ -1,0 +1,20 @@
+{
+  parserClass="com.renpylang.parser.RenpyParser"
+
+  extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+  psiClassPrefix="Renpy"
+  psiImplClassSuffix="Impl"
+  psiPackage="com.renpylang.psi"
+  psiImplPackage="com.renpylang.psi.impl"
+
+  elementTypeHolderClass="com.renpylang.psi.RenpyTypes"
+  elementTypeClass="com.renpylang.psi.RenpyElementType"
+  tokenTypeClass="com.renpylang.psi.RenpyTokenType"
+}
+
+string_def ::= (LABELDEF|COMMENT|CRLF)
+
+LABELDEF ::= LABEL KEY SEPARATOR? CRLF
+
+key_value ::= KEY VALUE (WHITESPACE) CRLF
